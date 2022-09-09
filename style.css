@@ -1,0 +1,29 @@
+.card-largura{
+   max-width: 18rem; /* card com largura max*/
+}
+
+.imagem-carrossel {
+    object-fit: cover;/*comportamento da imagem em relação ao container*/
+    object-position: 0 80%; /*movimentar a imagem no seu eixo X e Y*/
+    height: 400px;/*alturas das imagens*/
+}
+.fonte-titulo{
+    font-family: 'Pacifico', cursive;
+}
+
+.cor-especial{
+    color: darkred !important;
+
+}
+
+.card-posicao-imagem{
+    object-fit: cover;/*comportamento da imagem em relação ao container*/
+   /* object-position: 0 80%; /*movimentar a imagem no seu eixo X e Y*/
+    height: 200px;/*alturas das imagens*/
+}
+
+.bg-button{
+    background-color: darkred;
+    border-color: darkred;
+
+}
