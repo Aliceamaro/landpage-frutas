@@ -2,8 +2,11 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--cabeça de todas as informações-->
+  <link href="https://fonts.googleapis.com/css?family=Pacifico|Roboto:100,300,400,500,700,900" rel="stylesheet" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>fruta e fruto</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,13 +17,11 @@
 
 </head>
 
-
-
 <body>
+  <!--tudo que será exibido-->
 
   <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top ">
-    <!--class fixed top-deixa a nav bar fixa-->
-    <!-- fixed top  classe vinda do bootstrap-->
+
     <a class="navbar-brand fonte-titulo 
     cor-especial" href="#">fruta & fruto</a>
 
@@ -29,7 +30,7 @@
       aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Alterna navegação">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse d-flex justify-content-end " id="navbarNavAltMarkup">
+    <div class="collapse navbar-collapse  justify-content-end " id="navbarNavAltMarkup">
       <!--o menu a direta-->
       <ul class="navbar-nav ">
         <li><a class="nav-item nav-link active" href="#">Inicio <span class="sr-only">(Página atual)</span></a>
@@ -149,50 +150,48 @@
       </section>
   </main>
 
-<footer class="bg-secondary p-3">
-  <p class="text-light m-0 text-center">contato:<a class="text-light" href="mailto:email@frutafruto.com.br">email@frutafruto.com.br</a></p>
+  <footer class="bg-secondary p-3">
+    <p class="text-light m-0 text-center">contato:<a class="text-light"
+        href="mailto:email@frutafruto.com.br">email@frutafruto.com.br</a></p>
+  </footer>
 
-</footer>
+  <!-- Modal -->
+  <div class="modal fade" id="modal-contato" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <dialog class="modal-content">
+        <header class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Ente em Contato</h5>
+          <button type="button" class="close " data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </header>
+        <main class=" modal-body">
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="exampleFormControlInput1">Nome Completo </label>
+                <input type="text" class="form-control" id="exampleFormControlInput1"
+                  placeholder="Insira seu nome completo">
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlInput1">Email </label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+              </div>
 
-
-  
-
-<!-- Modal -->
-<div class="modal fade" id="modal-contato" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <dialog class="modal-content">
-      <header class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Ente em Contato</h5>
-        <button type="button" class="close " data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </header>
-      <main class=" modal-body">
-      <div class="modal-body">
-        <form>
-          <div class="form-group">
-            <label for="exampleFormControlInput1">Nome Completo </label>
-            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Insira seu nome completo">
-          </div>
-          <div class="form-group">
-            <label for="exampleFormControlInput1">Email </label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-          </div>
-          
-          <div class="form-group">
-            <label for="exampleFormControlTextarea1">Deixe seu Comentário</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-          </div>
-        </form>
-      </main>
-      <footer class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-        <button type="button" class="botao-cor-especial">Enviar</button>
-      </footer>
-    </dialog>
+              <div class="form-group">
+                <label for="exampleFormControlTextarea1">Deixe seu Comentário</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+            </form>
+        </main>
+        <footer class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+          <button type="button" class="btn botao-cor-especial">Enviar</button>
+        </footer>
+      </dialog>
+    </div>
   </div>
-</div>
- 
 
   <!--CÓDIGO VINDO DO BOOTSTRAP-->
 
@@ -216,8 +215,5 @@
     crossorigin="anonymous"></script>
 
   <script src=""></script>
-
-
 </body>
-
 </html>
